@@ -163,6 +163,7 @@ header div h1 a {
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin: 0 5px;
+    border-radius: 5px;
 }
 .youtube_wrap .youtube_menu li.on {
     background-color: rgb(255, 210, 8);
