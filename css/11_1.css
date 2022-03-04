@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.cont01 {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    height: 40vh;
+    border: 1px solid #ddd;
+}
+.cont01 .text {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 20px rgba(72, 115, 255, 0.336);
+}
+.cont01 video {
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .text dl {
+    display: flex;
+}
+.cont01 .text dl dt {
+    font-weight: bolder;
+}
+/* dl과 dt사이에 간격 nth-of-type으로 각각 줄수있다. 혹은 섹션을 1단2단나눠서 구조짜서하기*/
+.cont01:nth-of-type(1) .text dl dt {
+    width: 35%;
+    margin-bottom: 5px;
+}
+.cont01:nth-of-type(2) .text dl dt {
+    width: 25%;
+    margin-bottom: 5px;
+}
+.cont01 .text ul {
+    margin-top: 20px;
+}
+.cont01 .text ul li {
+    display: inline-block;
+    border: 1px solid #666;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+.cont01 .text ul li a {
+    display: block;/* 버튼 링크영역 꽉 채우기 */
+    padding: 0 15px;/* 글자 내부여백 */
+}
+.cont01 .text ul li:hover {
+    background-color: rgb(40, 173, 226);
+    box-shadow: 0 5px 10px rgba(40, 173, 226, 0.466);
+    border-radius: 10px;
+    transition: 1s;
+}
+.cont01 .text ul li:hover a {
+    color: #fff;
+}
+.cont01 .text h3 {
+    font-size: 30px;
+    color: rgb(12, 155, 221);
+}
+.cont01 .text p {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.cont01 .text ul li:nth-of-type(1) {
+    background-color: rgb(40, 173, 226);
+    border-radius: 10px;
+}
+.cont01 .text ul li:nth-of-type(1) a {
+    color: #fff;
+    font-weight: bold;
+}

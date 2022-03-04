@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;
+    display: block;
+    color: #333;
+}
+html, body {
+    color: #333;
+}
+.cont01 {
+    width: 1280px; /* 중심축 설정 */
+    margin: 150px auto;
+}
+.cont01 h3 {
+    font-family: 'NanumSquare';
+    font-size: 50px;
+    letter-spacing: -2px; /* 글자간의 간격조절 수치를 너무많이주지않기 -2px (좁게) 2px 넓게 */
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cont01 em {
+    /* background-color: antiquewhite; */
+    display: block; /* em은 인라인요소라서 display: block 사용해야함.  */
+    text-align: right;
+}
+.cont01 .imglist {
+    display: flex; /* 가로로 나열 */
+    justify-content: space-between; /* 양 끝에 맞춰 정렬 */
+}
+.cont01 .imglist a {
+    width: 24%; /* 박스가 한줄에 몇개 들어가냐에 따라 수치조절 */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); /* 박스에 그림자 효과 */
+}
+.cont01 .imglist a figure {
+    width: 100%;
+    height: 350px;
+    overflow: hidden; /* 넘치는 이미지들을 잘라내는 태그 */
+}
+.cont01 .imglist a figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 비율에 맞게 이미지가 알맞게 들어가게하는 태그 */
+    transition: 0.8s;
+}
+.cont01 .imglist a ul {
+    padding: 20px 10px;
+}
+.cont01 .imglist a ul li:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.cont01 .imglist a:hover img {
+    transform: scale(1.2); /* 1.2배만큼 확대 */
+    transition: 0.8s; /* 뚝뚝 끊어지는 느낌을 없애고 부드럽게 적용 */
+}
+
+/* 구글 지도 */
+.g_map {
+    width: 100%;
+}
+.g_map iframe {
+    width: 100%;
+}

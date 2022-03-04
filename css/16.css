@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+.img_list {
+    width: 500px;
+    height: 500px;
+    /* 영역 벗어나는 요소 숨김 */
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    position: relative;/* 본인위치 그대로 유지 */
+    /* position을 사용 후
+    top, left, right, bottom */
+}
+/* height 값의 경우 부모태그의 상속X 부모와 자식 태그 동일하게 height값을 주어야 적용가능. */
+.img_list a {
+    height: 100%;
+    position: relative;
+    /* ::before를 배치하기 위한 설정 */
+}
+
+.img_list a ul {
+    display: none;/* 존재 없애기 */
+    position: absolute;
+    /* position: relative가 있는 영역위치로 이동 top,left로 위치 이동가능 */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    z-index: 99; /* ul한테 적용되있음 */
+    /* absolute를 적용시에 width값 100% 텍스트 영역 넓혀주기 */
+}
+.img_list a figure {height: 100%;}
+.img_list a figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+/* 가상선택자를 이용한 스타일 적용 */
+/*
+.img_list a::before {
+    content: '이미지적용';
+    font-size: 50px;
+}
+.img_list a::after {
+    content: '이미지아래적용';
+} */
+.img_list a::before {
+    content: '';
+    display: block;
+    /* inline요소는 가로 세로 설정 X
+    inline 요소를 block요소로 변경을 하여
+    가로 세로 사이즈 설정O => display:block */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(166, 255, 0, 0.411);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    /* 순서변경 position 필요 만약 position 없을경우 position: relative를 추가해서 사용하면된다.  */
+    display: none;
+}
+.img_list a:hover ul {
+    display: block;
+}
+.img_list a:hover::before {
+    display: block;
+}
+.img_list a:hover img {
+    /* 이미지 확대 */
+    transform: scale(1.2);
+    transition: 1s;
+}

@@ -1,0 +1,73 @@
+@charset "utf-8";/* ;세미콜론 잘달려있는지 확인하기 */
+
+*{margin: 0; padding: 0;}
+li {list-style: none;}
+a {
+    text-decoration: none;/* 링크 밑줄 제거 */
+    color: #333;
+}
+.cont01 {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;/* 가로로 나열 */
+    height: 60vh;
+    /*background-color: antiquewhite;*/
+    border: 1px solid #ddd;
+}
+.cont01 video {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.cont01 .text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    /* 수직정렬 : 가운데 */
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.cont01 .text dl {
+    display: flex;
+}
+.cont01 .text dl dt {
+    width: 30%;
+    font-weight: bolder;
+}
+.cont01 .text dl dd {
+    width: 70%;
+}
+.cont01 .text ul {
+    margin-top: 20px;
+}
+.cont01 .text ul li {
+    display: inline-block;
+    border: 1px solid #333;
+    height: 40px;
+    line-height: 40px;
+    
+}
+.cont01 .text ul li a {
+    display: block;
+    padding: 0 15px;
+}
+.cont01 .text ul li:hover {
+    background-color: #333;
+}
+.cont01 .text ul li:hover a {
+    color: #fff;
+}
+
+.cont01 .text h4 {
+    font-size: 35px;
+}
+.cont01 .text p:nth-of-type(2) {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.cont01 .text ul li:nth-of-type(1) {
+    background-color: #333;
+}
+.cont01 .text ul li:nth-of-type(1) a {
+    color: #fff;
+}
