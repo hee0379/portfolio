@@ -37,6 +37,9 @@ header div {
     justify-content: space-between;
 }
 header div h1 a {
+    letter-spacing: 1px;
+    font-family: 'InkLipquid';
+    color: #333;
     position: absolute;
     left: 0;
     top: 50%;
@@ -46,7 +49,7 @@ header div h1 a {
 .main_visual {
     width: 100%;
     height: 800px;
-    background: url('../images/visual1-3.jpg') center center / cover no-repeat;
+    background: url('../images/main_visual.jpg') center center / cover no-repeat;
     background-attachment: fixed; /* 이미지고정후 스크롤 */
     color: #fff;
     /* 텍스트 수직 수평 가운데 정렬가능 */
@@ -58,14 +61,15 @@ header div h1 a {
     text-align: center;
 }
 .main_visual div h2 {
-    color: rgb(255, 210, 8);
-    font-size: 120px;
+    letter-spacing: 3px;
+    color: rgb(243, 198, 0);
+    font-size: 150px;
     font-family: 'InkLipquid';
 }
 .main_visual div p {
     font-size: 40px;
     margin-top: 30px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(51, 51, 51, 0.329);
 }
 
 /* best portfolio 베스트 포트폴리오 */
@@ -80,7 +84,7 @@ header div h1 a {
     margin-bottom: 40px;
 }
 .best .bg {
-    background-color: #eee;
+    background-color: rgba(245, 235, 209, 0.178);
     padding: 100px 0;
 }
 .best .bg .best_box {
@@ -129,13 +133,14 @@ header div h1 a {
     padding: 0 25px;
 }
 .best .best_box .info ul li:first-of-type {
-    background-color: rgb(255, 210, 8);
+    
+    border: 2px solid rgb(255, 210, 8);
     border-radius: 5px;
     transition: 0.8s;
 }
 .best .best_box .info ul li:first-of-type:hover {
+    background-color: rgb(255, 210, 8);
     box-shadow: 1px 3px 20px rgba(255, 210, 8, 0.562);
-    border: 1px solid #fff;
     transition: 0.8s;
 }
 .best .best_box .info ul li:nth-of-type(2) {
@@ -256,7 +261,7 @@ h3 {
 }
 /* 2D 디자인 */
 .g_design {
-    background-color: #eee;
+    background-color: rgb(255, 227, 137);
     padding: 150px 0;
 }
 .g_design em {
@@ -275,6 +280,8 @@ h3 {
 }
 .g_design .img_list div {
     width: 24%;
+    border-radius: 30px 30px 0 30px;
+    overflow: hidden;
 }
 .g_design .img_list div figure {
     width: 100%;
@@ -290,6 +297,7 @@ h3 {
 .g_design .img_list div ul {
     background-color: #fff;
     padding: 20px;
+
 }
 .g_design .img_list div ul li:first-of-type {
     font-size: 20px;
@@ -302,6 +310,9 @@ h3 {
 .g_design .img_list div:hover figure img {
     transform: scale(1.2);
 }
+.g_design .img_list div:hover {
+    box-shadow: 2px 3px 20px rgba(0, 0, 0, 0.2)
+}
 
 /* 푸터 footer */
 footer {
@@ -309,6 +320,11 @@ footer {
     color: #fff;
     padding: 100px 0;
     text-align: center;
+}
+footer h3 {
+    font-family: 'InkLipquid';
+    font-size: 80px;
+    color: #fff;
 }
 footer a {
     color: #fff;
