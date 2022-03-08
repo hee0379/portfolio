@@ -84,7 +84,7 @@ header div h1 a {
     margin-bottom: 40px;
 }
 .best .bg {
-    background-color: rgba(245, 235, 209, 0.178);
+    background-color: rgba(245, 235, 209, 0.315);
     padding: 100px 0;
 }
 .best .bg .best_box {
@@ -126,7 +126,7 @@ header div h1 a {
 .best .best_box .info ul li {
     height: 45px;
     line-height: 45px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     margin-right: 10px;
 }
 .best .best_box .info ul li a {
