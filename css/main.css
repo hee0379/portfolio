@@ -424,6 +424,7 @@ h3 {
 }
 .about dl {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .about dl dt {
     margin-bottom: 5px;
